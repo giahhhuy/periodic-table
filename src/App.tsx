@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle/ThemeToggle';
 import { elements } from './data/elements';
