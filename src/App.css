@@ -79,6 +79,13 @@ body {
   padding: 10px;
   overflow-x: auto;
   background-color: transparent;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 h1 {
@@ -361,20 +368,6 @@ h1:hover::after {
   
   .atomic-number {
     font-size: 9px;
-  }
-  
-  /* Thêm thanh scroll có style */
-  .container::-webkit-scrollbar {
-    height: 6px;
-  }
-  
-  .container::-webkit-scrollbar-track {
-    background: var(--bg-color);
-  }
-  
-  .container::-webkit-scrollbar-thumb {
-    background: var(--card-bg);
-    border-radius: 3px;
   }
 }
 
